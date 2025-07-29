@@ -1,0 +1,27 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+    "height": 26,
+    "spacing": 4,
+    "reload_style_on_change": true,
+
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+	"clock"
+    ],
+
+
+    "hyprland/workspaces": {
+     },
+    "clock": {
+	"tooltip": false,
+      	"format": "{:L%A %d %B  %H:%M}",
+	"locale": "de_DE.UTF-8"
+    }
+}
