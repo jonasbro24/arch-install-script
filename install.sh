@@ -44,6 +44,10 @@ yay -S --noconfirm --needed walker-bin
 # Other
 sudo pacman -S --noconfirm --needed obsidian
 
+# Zsh
+sudo pacman -S --noconfirm --needed zsh
+chsh -s /usr/bin/zsh
+
 # Starship Prompt
 sudo pacman -S --noconfirm --needed starship
 
