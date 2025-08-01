@@ -9,7 +9,7 @@ sudo locale-gen
 
 # Install yay
 cd $HOME
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si --noconfirm
 cd ..
 sudo rm -r yay
 
@@ -20,8 +20,18 @@ mkdir -p $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/hypr $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/walker $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/waybar $HOME/.config
+ln -s $SCRIPT_DIR/dotfiles/alacritty $HOME/.config
+ln -s $SCRIPT_DIR/dotfiles/nvim $HOME/.config
+ln -s $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config
+ln -s $SCRIPT_DIR/dotfiles.bashrc $HOME
 
 # Install programs
+
+# Firefox
+sudo pacman -S --noconfirm --needed firefox
+
+# Alacritty
+sudo pacman -S --noconfirm --needed alacritty
 
 # Window Management
 sudo pacman -S --noconfirm --needed hyprland
@@ -33,5 +43,14 @@ yay -S --noconfirm --needed walker-bin
 
 # Other
 sudo pacman -S --noconfirm --needed obsidian
+
+# Starship Prompt
+sudo pacman -S --noconfirm --needed starship
+
+# Bob with Neovim (When version 0.12 is released I should probably change that)
+sudo pacman -S --noconfirm --needed bob
+bob use nightly
+
+
 
 
