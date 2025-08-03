@@ -23,7 +23,8 @@ ln -s $SCRIPT_DIR/dotfiles/waybar $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/alacritty $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/nvim $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config
-ln -s $SCRIPT_DIR/dotfiles.bashrc $HOME
+ln -s $SCRIPT_DIR/dotfiles.zshrc $HOME
+ln -s $SCRIPT_DIR/dotfiles/swayosd $HOME/.config
 
 # Install programs
 
@@ -55,6 +56,9 @@ sudo pacman -S --noconfirm --needed starship
 sudo pacman -S --noconfirm --needed bob
 bob use nightly
 
+# SwayOSD
+sudo pacman -S --noconfirm --needed swayosd
 
-
-
+# File Manager
+sudo pacman -S --noconfirm --needed nautilus
+sudo pacman -S --noconfirm --needed sushi
