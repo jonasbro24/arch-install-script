@@ -62,3 +62,10 @@ sudo pacman -S --noconfirm --needed swayosd
 # File Manager
 sudo pacman -S --noconfirm --needed nautilus
 sudo pacman -S --noconfirm --needed sushi
+
+# Printer
+sudo pacman -S --noconfirm --needed cups
+sudo pacman -S --noconfirm --needed hplip
+sudo systemctl enable cups.service
+sudo pacman -S --noconfirm --needed sane
+sudo pacman -S --noconfirm --needed python-pyqt5
