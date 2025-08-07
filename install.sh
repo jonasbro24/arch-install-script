@@ -4,7 +4,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Setting locale right
-echo "de_DE.UTF-8" | sudo tee -a /etc/locale.gen
+echo "de_DE.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
 
 # Install yay
