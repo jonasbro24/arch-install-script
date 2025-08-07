@@ -1,6 +1,6 @@
-if ["$(tty)" = "/dev/tty1" ]; then
+if [ "$(tty)" = "/dev/tty1" ]; then
     if [ -z "$DISPLAY" ] && [ -z "$WAYLAND_DISPLAY" ]; then
-            exec Hyprland
+        exec Hyprland
     fi
 fi
 
