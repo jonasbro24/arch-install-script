@@ -23,7 +23,7 @@ ln -s $SCRIPT_DIR/dotfiles/waybar $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/alacritty $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/nvim $HOME/.config
 ln -s $SCRIPT_DIR/dotfiles/starship.toml $HOME/.config
-ln -s $SCRIPT_DIR/dotfiles.zshrc $HOME
+ln -s $SCRIPT_DIR/dotfiles/.zshrc $HOME
 ln -s $SCRIPT_DIR/dotfiles/swayosd $HOME/.config
 
 # Install programs
